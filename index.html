@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pang Ulam Food Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Times New Roman', serif;
+      background: linear-gradient(135deg, skyblue, #f5e6d3);
+      min-height: 100vh;
+    }
+
+    .navbar {
+      background: rgba(255,255,255,0.8);
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      text-align: center;
+      margin: 40px 0 10px;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    .recipe-card {
+      border-radius: 25px;
+      padding: 25px;
+      margin: 15px;
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      text-align: center;
+    }
+
+    .recipe-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .btn-custom {
+      border-radius: 20px;
+    }
+
+    footer {
+      text-align: center;
+      margin: 40px 0;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <span class="navbar-brand">🍽️ Pang Ulam Blog</span>
+  </div>
+</nav>
+
+<h1>My Favorite Filipino Recipes</h1>
+<div class="subtitle">Click "View Recipe" to see cooking steps</div>
+
+<div class="container">
+  <div class="row justify-content-center">
+
+    <!-- Adobo -->
+    <div class="col-md-5">
+      <div class="recipe-card">
+        <h4>🍗 Adobong Manok</h4>
+        <p>Classic chicken cooked in soy sauce and vinegar.</p>
+        <button class="btn btn-primary btn-custom" data-bs-toggle="modal" data-bs-target="#adoboModal">View Recipe</button>
+      </div>
+    </div>
+
+    <!-- Bangus -->
+    <div class="col-md-5">
+      <div class="recipe-card">
+        <h4>🐟 Sinigang na Bangus</h4>
+        <p>Sour soup with milkfish and vegetables.</p>
+        <button class="btn btn-primary btn-custom" data-bs-toggle="modal" data-bs-target="#bangusModal">View Recipe</button>
+      </div>
+    </div>
+
+    <!-- Baboy -->
+    <div class="col-md-5">
+      <div class="recipe-card">
+        <h4>🍖 Sinigang na Baboy</h4>
+        <p>Pork sour soup with tamarind flavor.</p>
+        <button class="btn btn-primary btn-custom" data-bs-toggle="modal" data-bs-target="#baboyModal">View Recipe</button>
+      </div>
+    </div>
+
+    <!-- Ampalaya -->
+    <div class="col-md-5">
+      <div class="recipe-card">
+        <h4>🥬 Ampalaya with Egg</h4>
+        <p>Healthy bitter melon with eggs.</p>
+        <button class="btn btn-primary btn-custom" data-bs-toggle="modal" data-bs-target="#ampalayaModal">View Recipe</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- MODALS -->
+
+<!-- Adobo Modal -->
+<div class="modal fade" id="adoboModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5>Adobong Manok</h5></div>
+      <div class="modal-body">
+        <ol>
+          <li>Heat oil and sauté garlic.</li>
+          <li>Add chicken and brown it.</li>
+          <li>Pour soy sauce and vinegar.</li>
+          <li>Add water and simmer.</li>
+          <li>Cook until tender and sauce thickens.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bangus Modal -->
+<div class="modal fade" id="bangusModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5>Sinigang na Bangus</h5></div>
+      <div class="modal-body">
+        <ol>
+          <li>Boil water and add tomatoes.</li>
+          <li>Add bangus and cook.</li>
+          <li>Put sinigang mix.</li>
+          <li>Add vegetables.</li>
+          <li>Simmer until cooked.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Baboy Modal -->
+<div class="modal fade" id="baboyModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5>Sinigang na Baboy</h5></div>
+      <div class="modal-body">
+        <ol>
+          <li>Boil pork until tender.</li>
+          <li>Add tomatoes and onion.</li>
+          <li>Put sinigang mix.</li>
+          <li>Add vegetables.</li>
+          <li>Simmer and serve.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Ampalaya Modal -->
+<div class="modal fade" id="ampalayaModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5>Ampalaya with Egg</h5></div>
+      <div class="modal-body">
+        <ol>
+          <li>Sauté garlic and onion.</li>
+          <li>Add sliced ampalaya.</li>
+          <li>Cook briefly.</li>
+          <li>Add beaten eggs.</li>
+          <li>Stir and serve.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>Made with ❤️ | Food Blog</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
